@@ -245,7 +245,7 @@ export default function ProjectsPage() {
                           className="absolute left-4 top-1/2 -translate-y-1/2 z-10 
                  bg-primary/10 text-primary 
                  hover:bg-primary hover:text-primary-foreground
-                 rounded-full opacity-0 group-hover:opacity-100 
+                 rounded-full group-hover:opacity-100 
                  transition-all hover:scale-110 backdrop-blur-sm"
                         >
                           <ChevronLeft className="w-6 h-6" />
@@ -261,7 +261,7 @@ export default function ProjectsPage() {
                           className="absolute right-4 top-1/2 -translate-y-1/2 z-10 
                  bg-primary/10 text-primary 
                  hover:bg-primary hover:text-primary-foreground
-                 rounded-full opacity-0 group-hover:opacity-100 
+                 rounded-full group-hover:opacity-100 
                  transition-all hover:scale-110 backdrop-blur-sm"
                         >
                           <ChevronRight className="w-6 h-6" />
