@@ -136,29 +136,25 @@ export function HeroSection() {
             className="flex justify-center lg:justify-start gap-6 text-muted-foreground"
           >
             {/* Buat array data link di sini */}
-            {[
-              { Icon: Mail, href: "mailto:jonathanwijaya062004@gmail.com" },
-              {
-                Icon: Linkedin,
-                href: "https://www.linkedin.com/in/jonathanwjy",
-              },
-              { Icon: Github, href: "https://github.com/Jonathanwjy" },
-              {
-                Icon: Instagram,
-                href: "https://www.instagram.com/jonathanwjy",
-              },
-            ].map((social, i) => (
-              <a
-                key={i}
-                href={social.href}
-                target="_blank" // Membuka di tab baru
-                rel="noopener noreferrer" // Keamanan standar untuk target="_blank"
-                className="hover:text-primary transition-colors cursor-pointer hover:scale-110 transform duration-200"
-              >
-                <social.Icon className="w-5 h-5" />
-              </a>
-            ))}
           </motion.div>
+          <div className="flex gap-4">
+            <SocialLink
+              href="https://github.com/Jonathanwjy"
+              icon={<Github />}
+            />
+            <SocialLink
+              href="https://www.linkedin.com/in/jonathanwjy/"
+              icon={<Linkedin />}
+            />
+            <SocialLink
+              href="https://www.instagram.com/jonathanwjy/"
+              icon={<Instagram />}
+            />
+            <SocialLink
+              href="mailto:jonathanwijaya062004@gmail.com"
+              icon={<Mail />}
+            />
+          </div>
         </div>
       </motion.div>
 

@@ -43,13 +43,19 @@ export default function FooterContact() {
               </h4>
               <div className="flex gap-4">
                 <SocialLink
-                  href="https://github.com/jonathanwijaya"
+                  href="https://github.com/Jonathanwjy"
                   icon={<Github />}
                 />
-                <SocialLink href="#" icon={<Linkedin />} />
-                <SocialLink href="#" icon={<Instagram />} />
                 <SocialLink
-                  href="mailto:jonathan@example.com"
+                  href="https://www.linkedin.com/in/jonathanwjy/"
+                  icon={<Linkedin />}
+                />
+                <SocialLink
+                  href="https://www.instagram.com/jonathanwjy/"
+                  icon={<Instagram />}
+                />
+                <SocialLink
+                  href="mailto:jonathanwijaya062004@gmail.com"
                   icon={<Mail />}
                 />
               </div>
