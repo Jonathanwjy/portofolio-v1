@@ -125,9 +125,6 @@ export function HeroSection() {
             >
               View Projects <ArrowDown className="w-4 h-4" />
             </a>
-            <button className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3 bg-background border border-border font-bold rounded-xl hover:bg-muted transition-all active:scale-95 shadow-sm">
-              See CV <ExternalLink className="w-4 h-4" />
-            </button>
           </motion.div>
 
           {/* Social Media Icons */}
