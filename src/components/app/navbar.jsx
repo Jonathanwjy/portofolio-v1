@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react"; // Install lucide-react jika belum
 import { cn } from "@/lib/utils";
 
-
 const navItems = [
   { name: "Home", link: "home" },
   { name: "About", link: "about" },
@@ -78,9 +77,12 @@ export function Navbar() {
             ))}
           </div>
 
-          <button className="px-5 md:px-6 py-2 text-sm font-bold text-secondary-foreground bg-secondary border border-border rounded-full hover:bg-accent transition-all active:scale-95">
+          <a
+            href="#contact"
+            className="px-5 md:px-6 py-2 text-sm font-bold text-secondary-foreground bg-secondary border border-border rounded-full hover:bg-accent transition-all active:scale-95"
+          >
             Contact
-          </button>
+          </a>
         </nav>
       </motion.div>
 
