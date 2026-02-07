@@ -174,3 +174,16 @@ export function HeroSection() {
     </section>
   );
 }
+
+function SocialLink({ href, icon }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-3 bg-secondary text-secondary-foreground rounded-full hover:bg-primary hover:text-white transition-all duration-300"
+    >
+      {React.cloneElement(icon, { size: 20 })}
+    </a>
+  );
+}
