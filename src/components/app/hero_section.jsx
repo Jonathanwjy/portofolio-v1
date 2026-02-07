@@ -135,13 +135,27 @@ export function HeroSection() {
             variants={itemVariants}
             className="flex justify-center lg:justify-start gap-6 text-muted-foreground"
           >
-            {[Mail, Linkedin, Github, Youtube, Instagram].map((Icon, i) => (
+            {/* Buat array data link di sini */}
+            {[
+              { Icon: Mail, href: "mailto:jonathanwijaya062004@gmail.com" },
+              {
+                Icon: Linkedin,
+                href: "https://www.linkedin.com/in/jonathanwjy",
+              },
+              { Icon: Github, href: "https://github.com/Jonathanwjy" },
+              {
+                Icon: Instagram,
+                href: "https://www.instagram.com/jonathanwjy",
+              },
+            ].map((social, i) => (
               <a
                 key={i}
-                href="#"
-                className="hover:text-primary transition-colors cursor-pointer"
+                href={social.href}
+                target="_blank" // Membuka di tab baru
+                rel="noopener noreferrer" // Keamanan standar untuk target="_blank"
+                className="hover:text-primary transition-colors cursor-pointer hover:scale-110 transform duration-200"
               >
-                <Icon className="w-5 h-5" />
+                <social.Icon className="w-5 h-5" />
               </a>
             ))}
           </motion.div>
