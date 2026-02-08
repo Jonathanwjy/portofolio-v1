@@ -61,7 +61,7 @@ export function HeroSection() {
 
             <div className="absolute inset-3 lg:inset-4 rounded-full overflow-hidden border-4 border-card shadow-2xl">
               <img
-                src="/path-to-your-photo.jpg"
+                src="/images/foto-diri.jpeg"
                 alt="Jonathan Wijaya"
                 className="w-full h-full object-cover"
               />
