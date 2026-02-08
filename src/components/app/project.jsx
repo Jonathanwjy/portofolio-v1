@@ -203,7 +203,7 @@ export default function ProjectsPage() {
                   {/* --- AREA GAMBAR / SLIDER --- */}
                   <motion.div
                     layoutId={`image-${selectedProject.images}`}
-                    className="relative w-3/4 mx-auto aspect-video group rounded-xl overflow-hidden mt-6"
+                    className="relative w-full md:w-3/4 mx-auto h-[33vh] md:h-auto md:aspect-video group md:rounded-xl overflow-hidden md:mt-6"
                   >
                     <AnimatePresence mode="wait">
                       <motion.img
