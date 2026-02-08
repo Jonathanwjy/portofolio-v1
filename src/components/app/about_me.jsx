@@ -38,7 +38,7 @@ export default function AboutPage() {
 
             <motion.div
               variants={fadeIn}
-              className="text-lg leading-relaxed text-muted-foreground"
+              className="text-sm md:text-lg leading-relaxed text-muted-foreground"
             >
               <p>
                 Informatics graduate with a strong focus on full stack web

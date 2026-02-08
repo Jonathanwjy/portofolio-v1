@@ -306,7 +306,7 @@ export default function ProjectsPage() {
                       </motion.h2>
                     </div>
 
-                    <DialogDescription className="text-lg whitespace-pre-line text-muted-foreground leading-relaxed">
+                    <DialogDescription className="text-sm md:text-lg whitespace-pre-line text-muted-foreground leading-relaxed">
                       {selectedProject.description}
                     </DialogDescription>
 

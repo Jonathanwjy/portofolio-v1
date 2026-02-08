@@ -172,6 +172,7 @@ export function HeroSection() {
   );
 }
 
+//komponen social link
 function SocialLink({ href, icon }) {
   return (
     <a
