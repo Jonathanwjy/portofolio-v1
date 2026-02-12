@@ -7,8 +7,10 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useTranslation } from "react-i18next";
 
 export default function FooterContact() {
+  const { t } = useTranslation();
   const [state, handleSubmit] = useForm("mgolekwv");
 
   return (
@@ -28,19 +30,19 @@ export default function FooterContact() {
           >
             <div>
               <h2 className="text-4xl font-bold tracking-tight text-foreground mb-4">
-                Let's Connect
+                Let's Connect!
               </h2>
+
               <p className="text-background text-lg max-w-md">
-                Interested in working together or have a question about my
-                projects? Feel free to reach out through the form or my social
-                media.
+                {t("contact.description")}
               </p>
             </div>
 
             <div className="space-y-4">
               <h4 className="text-sm font-bold uppercase tracking-widest text-foreground">
-                Follow Me
+                {t("contact.follow")}
               </h4>
+
               <div className="flex gap-4">
                 <SocialLink
                   href="https://github.com/Jonathanwjy"
@@ -73,20 +75,23 @@ export default function FooterContact() {
             {state.succeeded ? (
               <div className="text-center space-y-4 py-12">
                 <h3 className="text-2xl font-bold text-foreground">
-                  Message Sent 🎉
+                  {t("contact.form.successTitle")}
                 </h3>
+
                 <p className="text-muted-foreground">
-                  Thanks for reaching out! I’ll get back to you soon.
+                  {t("contact.form.successDesc")}
                 </p>
               </div>
             ) : (
               <form className="space-y-4" onSubmit={handleSubmit}>
-                {/* Honeypot anti spam */}
                 <input type="text" name="_gotcha" className="hidden" />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium ml-1">Name</label>
+                    <label className="text-sm font-medium ml-1">
+                      {t("contact.form.name")}
+                    </label>
+
                     <Input
                       name="name"
                       required
@@ -96,14 +101,18 @@ export default function FooterContact() {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-sm font-medium ml-1">Email</label>
+                    <label className="text-sm font-medium ml-1">
+                      {t("contact.form.email")}
+                    </label>
+
                     <Input
                       name="email"
                       type="email"
                       required
-                      placeholder="jonathan@example.com"
+                      placeholder="jonathan@gmail.com"
                       className="rounded-xl border-border"
                     />
+
                     <ValidationError
                       prefix="Email"
                       field="email"
@@ -113,13 +122,17 @@ export default function FooterContact() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium ml-1">Message</label>
+                  <label className="text-sm font-medium ml-1">
+                    {t("contact.form.message")}
+                  </label>
+
                   <Textarea
                     name="message"
                     required
                     placeholder="Hello, I'm interested in..."
                     className="min-h-[120px] rounded-xl border-border resize-none"
                   />
+
                   <ValidationError
                     prefix="Message"
                     field="message"
@@ -132,18 +145,15 @@ export default function FooterContact() {
                   disabled={state.submitting}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 rounded-xl text-lg font-semibold gap-2 transition-all group"
                 >
-                  {state.submitting ? "Sending..." : "Send Message"}
+                  {state.submitting
+                    ? t("contact.form.sending")
+                    : t("contact.form.send")}
+
                   <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </Button>
               </form>
             )}
           </motion.div>
-        </div>
-
-        <div className="mt-20 pt-8 border-t border-border text-center text-muted-foreground text-sm">
-          <p>
-            © {new Date().getFullYear()} Jonathan Wijaya. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>

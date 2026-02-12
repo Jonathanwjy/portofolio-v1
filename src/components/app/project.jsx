@@ -18,10 +18,12 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // --- DATA DUMMY PROYEK ---
 const projectsData = [
   {
+    key: "traho",
     title: "Traho Journal",
     description:
       "This application is designed to manage trade logging process. Traders often struggle to manage their records, such as entry reasons and daily updates. Especially when initial analyses shift due to dynamic market conditions. This app solves that problem by allowing users to append real-time analysis to their current holdings. It features a user-friendly interface with automated calculations, ensuring that all transaction history and notes are organized and easily accessible. Additionally, integrated charts provide clear data visualization, helping traders evaluate their trading performance",
@@ -42,6 +44,7 @@ const projectsData = [
     demoUrl: "",
   },
   {
+    key: "wise",
     title: "Wise University Admission",
     description:
       "This application is a web-based Student Admission Management System designed to handle the complete new student enrollment process. When the application is first accessed, users are presented with a dashboard containing general information about the university, including announcements and admission updates. The system supports authentication with two roles: User (Applicant) and Admin.\n\nApplicants must register and login to begin the admission process. However, access to each stage is strictly controlled through an admin verification mechanism. Users are required to be verified by an admin before they apply to the university. Each stage, application submission, payment confirmation, and temporary student ID (KTM) must be reviewed and approved by an admin before the user can move forward. This sequential verification flow ensures data accuracy, prevents invalid submissions, and maintains administrative control.\n\nAdmins are responsible for user verification, registration approval, payment validation, and issuing temporary student cards. Additionally, the system provides a CRUD-based announcement management feature, allowing admins to create, update, and publish announcements dynamically.",
@@ -69,6 +72,7 @@ const projectsData = [
     demoUrl: "",
   },
   {
+    key: "pkbm",
     title: "Buku Induk Siswa Sekolah Bintang",
     description:
       "This project is a web-based information system designed to manage student master data for PKBM Sekolah Bintang, a non-formal education institution. The application was developed to replace manual record. The system allows administrators and staff to manage student profiles and academic records.\n\nThe system supports multi-role access (Super Admin, Admin, Staff). Key features include student data CRUD operations, academic score management, filtering and searching by academic year and package, and automatic generation of student reports in PDF and Word formats. The dashboard also provides statistical visualizations of student growth over time.",
@@ -126,6 +130,8 @@ const titleVariants = {
 };
 
 export default function ProjectsPage() {
+  const { t } = useTranslation();
+
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -181,7 +187,11 @@ export default function ProjectsPage() {
               className="w-full h-full flex justify-center" // Pastikan card di tengah grid
             >
               <ProjectCard
-                project={project}
+                project={{
+                  ...project,
+                  title: t(`projects.${project.key}.title`),
+                  description: t(`projects.${project.key}.shortDesc`),
+                }}
                 onClick={() => handleOpenProject(project)}
               />
             </motion.div>
@@ -302,12 +312,12 @@ export default function ProjectsPage() {
                         layoutId={`title-${selectedProject.title}`}
                         className="text-3xl md:text-4xl font-bold text-foreground"
                       >
-                        {selectedProject.title}
+                        {t(`projects.${selectedProject.key}.title`)}
                       </motion.h2>
                     </div>
 
                     <DialogDescription className="text-sm md:text-lg whitespace-pre-line text-muted-foreground leading-relaxed">
-                      {selectedProject.description}
+                      {t(`projects.${selectedProject.key}.description`)}
                     </DialogDescription>
 
                     <div className="flex flex-wrap gap-4 pt-4">

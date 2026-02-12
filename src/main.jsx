@@ -10,6 +10,7 @@ import { ExperienceEducation } from "./components/app/education_experience";
 import ProjectsPage from "./components/app/project";
 import TechStackPage from "./components/app/tech_stack";
 import FooterContact from "./components/app/footer_contact";
+import "./i18n";
 
 const Home = () => (
   <>
