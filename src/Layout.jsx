@@ -3,6 +3,7 @@ import React from "react";
 import { Navbar } from "./components/app/navbar";
 import { Outlet } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion"; // Tambahkan useSpring untuk gerak lebih halus
+import { ThemeProvider } from "./components/theme-provider";
 
 function Layout() {
   const { scrollYProgress } = useScroll();
@@ -17,17 +18,19 @@ function Layout() {
   return (
     <>
       {/* Scroll Progress Bar */}
-      <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-primary z-[6000] origin-left"
-        style={{ scaleX }}
-      />
+      <ThemeProvider>
+        <motion.div
+          className="fixed top-0 left-0 right-0 h-1 bg-primary z-[6000] origin-left"
+          style={{ scaleX }}
+        />
 
-      <Navbar />
+        <Navbar />
 
-      <main>
-        {/* Konten Hero, About, dll akan muncul di sini */}
-        <Outlet />
-      </main>
+        <main>
+          {/* Konten Hero, About, dll akan muncul di sini */}
+          <Outlet />
+        </main>
+      </ThemeProvider>
     </>
   );
 }

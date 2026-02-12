@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react"; // Install lucide-react jika belum
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "../mode-toggle";
 
 const navItems = [
   { name: "Home", link: "home" },
@@ -83,6 +84,7 @@ export function Navbar() {
           >
             Contact
           </a>
+          <ModeToggle />
         </nav>
       </motion.div>
 
