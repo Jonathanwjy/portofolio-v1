@@ -47,7 +47,7 @@ i18n.use(initReactI18next).init({
             institution: "Universitas Multi Data Palembang",
             period: "2022 - 2026",
             description:
-              "Graduated with a GPA of 3.66/4.00. Focused on full stack web development...",
+              "Graduated with a GPA of 3.66/4.00. Focused on full stack web development, data structure, and database management. Experienced in building web applications using modern frameworks while strengthening problem-solving, system design, and real-world application development skills. ",
           },
         },
         experience: {
