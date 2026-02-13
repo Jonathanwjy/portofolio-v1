@@ -127,9 +127,9 @@ i18n.use(initReactI18next).init({
           title: "Tentang",
           me: "Saya",
           paragraph1:
-            "Lulusan Informatika dengan fokus kuat pada full stack web development. Berpengalaman dalam membangun aplikasi web menggunakan PHP, JavaScript, MySQL, React, Tailwind CSS, dan Laravel.",
+            "Lulusan Informatika dengan minat kuat pada full stack web development. Berpengalaman dalam membangun aplikasi web menggunakan PHP, JavaScript, MySQL, React, Tailwind CSS, dan Laravel.",
           paragraph2:
-            "Saya senang mengubah ide dan kebutuhan menjadi sistem yang fungsional dan terstruktur dengan baik. Saya memiliki rasa ingin tahu yang tinggi dan selalu termotivasi untuk meningkatkan kemampuan dengan mempelajari teknologi baru dan best practices dalam ekosistem web development. Selain kemampuan teknis, saya menghargai kerja tim, komunikasi yang jelas, dan tanggung jawab. Saya nyaman bekerja dalam lingkungan kolaboratif, berkontribusi dengan ide, serta belajar dari feedback. Saya ingin terus berkembang sebagai developer dan berkontribusi pada proyek yang memberikan solusi nyata.",
+            "Saya senang mengubah ide dan kebutuhan menjadi sistem yang fungsional dan terstruktur dengan baik. Saya memiliki rasa ingin tahu yang tinggi dan motivasi untuk meningkatkan kemampuan dengan mempelajari teknologi baru dan best practices dalam ekosistem web development. Selain kemampuan teknis, saya mampu bekerja dengan baik bersama tim, komunikasi yang jelas, dan tanggung jawab. Saya ingin terus berkembang sebagai developer dan berkontribusi pada proyek yang memberikan dan memecahkan masalah yang nyata.",
         },
         section: {
           education: "Pendidikan",
@@ -138,7 +138,7 @@ i18n.use(initReactI18next).init({
 
         education: {
           mathScience: {
-            title: "Matematika dan Sains",
+            title: "MIPA",
             institution: "SMA Xaverius 1 Palembang",
             period: "2019 - 2022",
             description:
@@ -150,7 +150,7 @@ i18n.use(initReactI18next).init({
             institution: "Universitas Multi Data Palembang",
             period: "2022 - 2026",
             description:
-              "Lulus dengan IPK 3.66/4.00. Berfokus pada full stack web development, struktur data, dan manajemen basis data. Berpengalaman dalam membangun aplikasi web menggunakan framework modern serta memperkuat kemampuan problem solving, perancangan sistem, dan pengembangan proyek kolaboratif.",
+              "Lulus dengan IPK 3.66/4.00. Berfokus pada full stack web development, struktur data, dan manajemen basis data. Berpengalaman dalam membangun aplikasi web menggunakan framework modern serta memperkuat kemampuan problem solving, perancangan sistem, dan pengembangan aplikasi nyata.",
           },
         },
 
@@ -164,7 +164,7 @@ i18n.use(initReactI18next).init({
           },
         },
         projects: {
-          sectionTitle: "Proyek Unggulan",
+          sectionTitle: "Proyek",
           github: "Repository GitHub",
           demo: "Demo Aplikasi",
 
@@ -172,25 +172,25 @@ i18n.use(initReactI18next).init({
             title: "Traho Journal",
             shortDesc: "Aplikasi pencatatan dan evaluasi performa trading.",
             description:
-              "Aplikasi ini dirancang untuk mengelola proses pencatatan trading. Trader sering mengalami kesulitan dalam mengatur catatan mereka, seperti alasan entry dan pembaruan harian, terutama ketika analisis awal berubah akibat kondisi pasar yang dinamis. Aplikasi ini menyelesaikan masalah tersebut dengan memungkinkan pengguna menambahkan analisis secara real-time pada posisi yang sedang berjalan. Aplikasi ini memiliki antarmuka yang ramah pengguna dengan perhitungan otomatis, sehingga seluruh riwayat transaksi dan catatan tersusun rapi serta mudah diakses. Selain itu, grafik yang terintegrasi menyediakan visualisasi data yang jelas untuk membantu trader mengevaluasi performa trading mereka.",
+              "Aplikasi ini dirancang untuk mengelola proses pencatatan trading. Trader sering mengalami kesulitan dalam mengatur catatan mereka, seperti alasan entry dan catatan harian, terutama ketika analisis awal berubah akibat kondisi pasar yang dinamis. Aplikasi ini menyelesaikan masalah tersebut dengan memungkinkan pengguna menambahkan analisis berdasarkan tanggal pada posisi yang sedang berjalan. Aplikasi ini memiliki antarmuka yang ramah pengguna dengan perhitungan otomatis, sehingga seluruh riwayat transaksi dan catatan tersusun rapi serta mudah diakses. Selain itu, terdapat grafik visualisasi data yang jelas untuk membantu trader mengevaluasi performa trading mereka.",
           },
 
           wise: {
             title: "Wise University Admission",
             shortDesc: "Sistem manajemen penerimaan mahasiswa baru.",
             description:
-              "Aplikasi ini merupakan Sistem Manajemen Penerimaan Mahasiswa Baru berbasis web yang dirancang untuk menangani seluruh proses pendaftaran mahasiswa baru secara menyeluruh. Saat aplikasi pertama kali diakses, pengguna akan disajikan dashboard yang berisi informasi umum mengenai universitas, termasuk pengumuman dan pembaruan terkait penerimaan mahasiswa. Sistem ini mendukung autentikasi dengan dua peran, yaitu User (Pendaftar) dan Admin. Pendaftar diwajibkan untuk melakukan registrasi dan login untuk memulai proses pendaftaran. Namun, akses ke setiap tahapan dikontrol secara ketat melalui mekanisme verifikasi admin. Pengguna harus diverifikasi oleh admin sebelum dapat mengajukan pendaftaran ke universitas. Setiap tahapan, mulai dari pengajuan formulir, konfirmasi pembayaran, hingga penerbitan Kartu Tanda Mahasiswa (KTM) sementara, harus ditinjau dan disetujui oleh admin sebelum pengguna dapat melanjutkan ke tahap berikutnya. Alur verifikasi berurutan ini memastikan keakuratan data, mencegah pengajuan yang tidak valid, serta menjaga kendali administratif. ",
+              "Aplikasi ini merupakan Sistem Manajemen Penerimaan Mahasiswa Baru berbasis web yang dirancang untuk menangani seluruh proses pendaftaran mahasiswa baru secara menyeluruh. Saat aplikasi pertama kali diakses, pengguna akan disajikan dashboard yang berisi informasi umum mengenai universitas, termasuk pengumuman dan pembaruan terkait penerimaan mahasiswa. Sistem ini mendukung autentikasi dengan dua peran, yaitu User (Pendaftar) dan Admin. Pendaftar diwajibkan untuk melakukan registrasi dan login untuk memulai proses pendaftaran. Pengguna harus diverifikasi oleh admin sebelum dapat mengajukan pendaftaran ke universitas. Setiap tahapan, mulai dari pengisian formulir, konfirmasi pembayaran, hingga penerbitan Kartu Tanda Mahasiswa (KTM) sementara, harus ditinjau dan disetujui oleh admin sebelum pengguna dapat melanjutkan ke tahap berikutnya. Alur verifikasi berurutan ini memastikan keakuratan data, mencegah pengajuan yang tidak valid, serta menjaga kendali administratif. ",
           },
 
           pkbm: {
             title: "Buku Induk Siswa Sekolah Bintang",
             shortDesc: "Sistem pengelolaan data induk siswa.",
             description:
-              "Proyek ini merupakan sistem informasi berbasis web yang dirancang untuk mengelola data induk siswa di PKBM Sekolah Bintang, sebuah institusi pendidikan non-formal. Aplikasi ini dikembangkan untuk menggantikan proses pencatatan manual. Sistem ini memungkinkan administrator dan staf untuk mengelola profil siswa serta data akademik. Sistem ini mendukung akses multi-peran (Super Admin, Admin, Staff). Fitur utama meliputi operasi CRUD data siswa, pengelolaan nilai akademik, penyaringan dan pencarian berdasarkan tahun ajaran serta paket, serta pembuatan laporan siswa secara otomatis dalam format PDF dan Word. Dashboard juga menyediakan visualisasi statistik pertumbuhan siswa dari waktu ke waktu.",
+              "Proyek ini merupakan sistem informasi berbasis web yang dirancang untuk mengelola data induk siswa di PKBM Sekolah Bintang, sebuah institusi pendidikan non-formal. Aplikasi ini dikembangkan untuk menggantikan proses pencatatan manual. Sistem ini memungkinkan administrator dan staf untuk mengelola profil siswa serta data akademik. Sistem ini mendukung akses multi-peran (Super Admin, Admin, Staff). Fitur utama meliputi operasi CRUD data siswa, pengelolaan nilai akademik, penyaringan dan pencarian berdasarkan tahun ajaran serta paket, serta pembuatan raport siswa secara otomatis dalam format PDF dan Word. Dashboard juga menyediakan visualisasi statistik pertumbuhan siswa dari waktu ke waktu.",
           },
         },
         contact: {
-          title: "Mari Terhubung",
+          title: "Let's Connect",
           description:
             "Tertarik untuk bekerja sama atau memiliki pertanyaan tentang proyek saya? Silakan hubungi saya melalui form atau media sosial.",
           follow: "Ikuti Saya",
