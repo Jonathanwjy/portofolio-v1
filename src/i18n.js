@@ -84,6 +84,13 @@ i18n.use(initReactI18next).init({
             description:
               "This project is a web-based information system designed to manage student master data for PKBM Sekolah Bintang, a non-formal education institution. The application was developed to replace manual record. The system allows administrators and staff to manage student profiles and academic records.\n\nThe system supports multi-role access (Super Admin, Admin, Staff). Key features include student data CRUD operations, academic score management, filtering and searching by academic year and package, and automatic generation of student reports in PDF and Word formats. The dashboard also provides statistical visualizations of student growth over time.",
           },
+          barber: {
+            title: "Sixty BarberShop Profile and Booking",
+            shortDesc:
+              "BarberShop landing page, booking system, and administration.",
+            description:
+              "This project is a comprehensive web application developed for Sixty BarberShop, serving as both an engaging landing page and an integrated online booking platform. It was designed to streamline the reservation process for customers, eliminating manual scheduling conflicts, and to digitalize daily operations for the barbershop management.\n\nThe system features a seamless customer booking experience with dynamic time slots, real-time availability checking, and secure online payment integration via Midtrans. For administrators, it provides a robust dashboard to efficiently manage services, capsters (barbers), dynamic pricing, and monitor daily booking schedules. Built with a modern tech stack including Laravel, React (Inertia.js), and TypeScript, the application ensures a fast, interactive, and user-friendly experience with dynamic status updates and interactive confirmations.",
+          },
         },
         contact: {
           title: "Let's Connect",

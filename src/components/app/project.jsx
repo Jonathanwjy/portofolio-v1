@@ -98,6 +98,22 @@ const projectsData = [
     githubUrl: "https://github.com/Jonathanwjy/pkbm-sekolah-bintang",
     demoUrl: "",
   },
+  {
+    key: "barber",
+    title: "Sixty BarberShop Profile and Booking",
+    description:
+      "This project is a comprehensive web application developed for Sixty BarberShop, serving as both an engaging landing page and an integrated online booking platform. It was designed to streamline the reservation process for customers, eliminating manual scheduling conflicts, and to digitalize daily operations for the barbershop management.\n\nThe system features a seamless customer booking experience with dynamic time slots, real-time availability checking, and secure online payment integration via Midtrans. For administrators, it provides a robust dashboard to efficiently manage services, capsters (barbers), dynamic pricing, and monitor daily booking schedules. Built with a modern tech stack including Laravel, React (Inertia.js), and TypeScript, the application ensures a fast, interactive, and user-friendly experience with dynamic status updates and interactive confirmations",
+    images: ["/images/sixty-barbershop/sixty-cover.png"],
+    tags: [
+      "Inertia JS",
+      "Tailwind CSS",
+      "MySQL",
+      "Authentication & Authorization",
+      "Midtrans Payment",
+    ],
+    githubUrl: "https://github.com/Jonathanwjy/sixty-barbershop",
+    demoUrl: "",
+  },
 ];
 
 // --- VARIAN ANIMASI ---
