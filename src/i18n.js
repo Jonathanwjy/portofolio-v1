@@ -85,11 +85,11 @@ i18n.use(initReactI18next).init({
               "This project is a web-based information system designed to manage student master data for PKBM Sekolah Bintang, a non-formal education institution. The application was developed to replace manual record. The system allows administrators and staff to manage student profiles and academic records.\n\nThe system supports multi-role access (Super Admin, Admin, Staff). Key features include student data CRUD operations, academic score management, filtering and searching by academic year and package, and automatic generation of student reports in PDF and Word formats. The dashboard also provides statistical visualizations of student growth over time.",
           },
           barber: {
-            title: "Sixty BarberShop Profile and Booking",
+            title: "Sixty BarberShop",
             shortDesc:
               "BarberShop landing page, booking system, and administration.",
             description:
-              "This project is a comprehensive web application developed for Sixty BarberShop, serving as both an engaging landing page and an integrated online booking platform. It was designed to streamline the reservation process for customers, eliminating manual scheduling conflicts, and to digitalize daily operations for the barbershop management.\n\nThe system features a seamless customer booking experience with dynamic time slots, real-time availability checking, and secure online payment integration via Midtrans. For administrators, it provides a robust dashboard to efficiently manage services, capsters (barbers), dynamic pricing, and monitor daily booking schedules. Built with a modern tech stack including Laravel, React (Inertia.js), and TypeScript, the application ensures a fast, interactive, and user-friendly experience with dynamic status updates and interactive confirmations.",
+              "This project is a web application for a BarberShop, functioning as a landing page that provides barbershop-related information and an integrated online booking platform. The application is designed to streamline the reservation process for customers, prevent scheduling conflicts, and digitize daily operations for barbershop management.\n\nThe system offers a seamless customer booking experience with dynamic time slot options, real-time availability checks, and secure online payment integration using Midtrans. On the administrator side, a dashboard is provided to manage services, capsters (barbers), dynamic pricing for different services and capsters, as well as to efficiently monitor daily customer schedules. It is built with modern technologies including Laravel, React (Inertia.js), and TypeScript.",
           },
         },
         contact: {
@@ -174,7 +174,6 @@ i18n.use(initReactI18next).init({
           sectionTitle: "Proyek",
           github: "Repository GitHub",
           demo: "Demo Aplikasi",
-
           traho: {
             title: "Traho Journal",
             shortDesc: "Aplikasi pencatatan dan evaluasi performa trading.",
@@ -194,6 +193,13 @@ i18n.use(initReactI18next).init({
             shortDesc: "Sistem pengelolaan data induk siswa.",
             description:
               "Proyek ini merupakan sistem informasi berbasis web yang dirancang untuk mengelola data induk siswa di PKBM Sekolah Bintang, sebuah institusi pendidikan non-formal. Aplikasi ini dikembangkan untuk menggantikan proses pencatatan manual. Sistem ini memungkinkan administrator dan staf untuk mengelola profil siswa serta data akademik.\n\n Sistem ini mendukung akses multi-peran (Super Admin, Admin, Staff). Fitur utama meliputi operasi CRUD data siswa, pengelolaan nilai akademik, penyaringan dan pencarian berdasarkan tahun ajaran serta paket, serta pembuatan raport siswa secara otomatis dalam format PDF dan Word. Dashboard juga menyediakan visualisasi statistik pertumbuhan siswa dari waktu ke waktu.",
+          },
+          barber: {
+            title: "Sixty BarberShop",
+            shortDesc:
+              "Landing page BarberShop, sistem booking, dan administrasi.",
+            description:
+              "Proyek ini adalah aplikasi web untuk BarberShop, berfungsi sebagai landing page yang menyediakan informasi terkait barbershop, dan platform booking online terintegrasi. Aplikasi ini dirancang untuk menyederhanakan proses reservasi bagi pelanggan, mencegah terjadinya jadwal yang bentrok, dan mendigitalisasi operasional harian bagi manajemen barbershop.\n\nSistem ini menawarkan pengalaman booking pelanggan dengan pilihan waktu (time slot) yang dinamis, pengecekan ketersediaan secara real-time, dan integrasi pembayaran online yang aman menggunakan Midtrans. Pada sisi administrator, tersedia dasboard untuk mengelola service, capster, harga dinamis untuk tiap service dan capster yang berbeda, serta memantau jadwal pelanggan harian secara efisien. Dibangun dengan teknologi modern termasuk Laravel, React (Inertia.js), dan TypeScript.",
           },
         },
         contact: {

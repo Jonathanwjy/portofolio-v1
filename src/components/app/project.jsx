@@ -100,10 +100,24 @@ const projectsData = [
   },
   {
     key: "barber",
-    title: "Sixty BarberShop Profile and Booking",
+    title: "Sixty BarberShop",
     description:
-      "This project is a comprehensive web application developed for Sixty BarberShop, serving as both an engaging landing page and an integrated online booking platform. It was designed to streamline the reservation process for customers, eliminating manual scheduling conflicts, and to digitalize daily operations for the barbershop management.\n\nThe system features a seamless customer booking experience with dynamic time slots, real-time availability checking, and secure online payment integration via Midtrans. For administrators, it provides a robust dashboard to efficiently manage services, capsters (barbers), dynamic pricing, and monitor daily booking schedules. Built with a modern tech stack including Laravel, React (Inertia.js), and TypeScript, the application ensures a fast, interactive, and user-friendly experience with dynamic status updates and interactive confirmations",
-    images: ["/images/sixty-barbershop/sixty-cover.png"],
+      "This project is a comprehensive web application for BarberShop, serving as both an engaging landing page and an integrated online booking platform. It was designed to streamline the reservation process for customers, eliminating manual scheduling conflicts, and to digitalize daily operations for the barbershop management.\n\nThe system features a seamless customer booking experience with dynamic time slots, real-time availability checking, and secure online payment integration via Midtrans. For administrators, it provides a robust dashboard to efficiently manage services, capsters (barbers), dynamic pricing, and monitor daily booking schedules. Built with a modern tech stack including Laravel, React (Inertia.js), and TypeScript, the application ensures a fast, interactive, and user-friendly experience with dynamic status updates and interactive confirmations",
+    images: [
+      "/images/sixty-barbershop/sixty-cover.png",
+      "images/sixty-barbershop/sixty-1.png",
+      "images/sixty-barbershop/sixty-2.png",
+      "images/sixty-barbershop/sixty-3.png",
+      "images/sixty-barbershop/sixty-4.png",
+      "images/sixty-barbershop/sixty-5.png",
+      "images/sixty-barbershop/sixty-6.png",
+      "images/sixty-barbershop/sixty-7.png",
+      "images/sixty-barbershop/sixty-8.png",
+      "images/sixty-barbershop/sixty-9.png",
+      "images/sixty-barbershop/sixty-10.png",
+      "images/sixty-barbershop/sixty-11.png",
+      "images/sixty-barbershop/sixty-12.png",
+    ],
     tags: [
       "Inertia JS",
       "Tailwind CSS",
