@@ -28,8 +28,8 @@ const projectsData = [
     description:
       "This application is designed to manage trade logging process. Traders often struggle to manage their records, such as entry reasons and daily updates. Especially when initial analyses shift due to dynamic market conditions. This app solves that problem by allowing users to append real-time analysis to their current holdings. It features a user-friendly interface with automated calculations, ensuring that all transaction history and notes are organized and easily accessible. Additionally, integrated charts provide clear data visualization, helping traders evaluate their trading performance",
     images: [
-      "images/traho/traho.png",
-      "/images/traho/traho-1.png",
+      "images/traho/traho().png",
+      "/images/traho/traho(-1).png",
       "/images/traho/traho-2.png",
       "/images/traho/traho-3.png",
       "/images/traho/traho-4.png",
