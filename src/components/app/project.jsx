@@ -30,6 +30,9 @@ const projectsData = [
     images: [
       "images/traho/traho().png",
       "/images/traho/traho(-1).png",
+      "/images/traho/traho(1).png",
+      "/images/traho/traho(2).png",
+
       "/images/traho/traho-2.png",
       "/images/traho/traho-3.png",
       "/images/traho/traho-4.png",
