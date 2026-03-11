@@ -17,7 +17,7 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="min-h-4/5 mb-24 bg-background px-6 pt-48" id="about">
+    <div className="min-h-screen bg-background px-6 pt-48" id="about">
       <div className="container max-w-6xl mx-auto">
         <motion.section
           initial="initial"
@@ -32,7 +32,10 @@ export default function AboutPage() {
               className="text-4xl md:text-5xl font-bold tracking-tight"
             >
               {t("about.title")}{" "}
-              <span className="text-primary">{t("about.me")}{}</span>
+              <span className="text-primary">
+                {t("about.me")}
+                {}
+              </span>
             </motion.h1>
 
             <motion.div

@@ -53,7 +53,7 @@ i18n.use(initReactI18next).init({
         experience: {
           intern: {
             title: "Web Developer Intern",
-            company: "PKBM Sekolah Bintang",
+            institution: "PKBM Sekolah Bintang",
             period: "Feb 2025 - Jul 2025",
             description:
               "Developed a web-based Student Information System using Laravel and MySQL.",
@@ -144,20 +144,19 @@ i18n.use(initReactI18next).init({
         },
 
         education: {
-          mathScience: {
-            title: "MIPA",
-            institution: "SMA Xaverius 1 Palembang",
-            period: "2019 - 2022",
-            description:
-              "Lulus dengan fondasi akademik yang kuat dalam bidang matematika dan sains.",
-          },
-
           informatics: {
             title: "Informatika",
             institution: "Universitas Multi Data Palembang",
             period: "2022 - 2026",
             description:
               "Lulus dengan IPK 3.66/4.00. Berfokus pada full stack web development, struktur data, dan manajemen basis data. Berpengalaman dalam membangun aplikasi web menggunakan framework modern serta memperkuat kemampuan problem solving, perancangan sistem, dan pengembangan aplikasi nyata.",
+          },
+          mathScience: {
+            title: "MIPA",
+            institution: "SMA Xaverius 1 Palembang",
+            period: "2019 - 2022",
+            description:
+              "Lulus dengan fondasi akademik yang kuat dalam bidang matematika dan sains.",
           },
         },
 
