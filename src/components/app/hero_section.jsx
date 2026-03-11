@@ -65,7 +65,7 @@ export function HeroSection() {
               className="absolute bottom-6 -right-2 bg-card border border-border px-3 py-1.5 rounded-full shadow-lg flex items-center gap-2"
             >
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span className="text-[10px] font-bold uppercase tracking-wider">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-foreground">
                 Open To Work
               </span>
             </motion.div>
@@ -77,7 +77,7 @@ export function HeroSection() {
           variants={itemVariants}
           className="space-y-6 text-center lg:text-left"
         >
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground">
             {t("hero.greeting")} <br />
             <span className="text-primary"> Jonathan Wijaya.</span>
           </h2>
@@ -90,14 +90,14 @@ export function HeroSection() {
             <p className="text-[10px] uppercase text-muted-foreground font-semibold mb-1">
               {t("hero.focus")}
             </p>
-            <p className="text-xs lg:text-sm font-bold">
+            <p className="text-xs lg:text-sm font-bold text-foreground">
               {t("hero.focusValue")}
             </p>
           </div>
 
           <a
             href="#projects"
-            className="flex items-center justify-center gap-2 px-8 py-3 bg-primary text-background font-bold rounded-xl"
+            className="flex items-center justify-center gap-2 px-8 py-3 bg-primary text-foreground font-bold rounded-xl"
           >
             {t("hero.viewProjects")} <ArrowDown className="w-4 h-4" />
           </a>
@@ -122,7 +122,8 @@ function SocialLink({ href, icon }) {
     <a
       href={href}
       target="_blank"
-      className="p-3 bg-secondary rounded-full hover:bg-primary transition-all"
+      rel="noopener noreferrer"
+      className="p-3 bg-secondary text-secondary-foreground rounded-full hover:bg-primary hover:text-white transition-all duration-300"
     >
       {React.cloneElement(icon, { size: 20 })}
     </a>

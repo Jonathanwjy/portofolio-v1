@@ -29,7 +29,7 @@ export default function AboutPage() {
           <div className="md:col-span-3 space-y-8">
             <motion.h1
               variants={fadeIn}
-              className="text-4xl md:text-5xl font-bold tracking-tight"
+              className="text-4xl md:text-5xl font-bold tracking-tight text-foreground"
             >
               {t("about.title")}{" "}
               <span className="text-primary">
