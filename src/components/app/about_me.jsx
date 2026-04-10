@@ -25,7 +25,6 @@ export default function AboutPage() {
           viewport={{ once: false, amount: 0.3 }}
           className="grid grid-cols-1 md:grid-cols-5 gap-12 items-center"
         >
-          {/* TEXT */}
           <div className="md:col-span-3 space-y-8">
             <motion.h1
               variants={fadeIn}
@@ -47,7 +46,6 @@ export default function AboutPage() {
             </motion.div>
           </div>
 
-          {/* IMAGE */}
           <motion.div
             variants={fadeIn}
             transition={{ delay: 0.3, duration: 0.8 }}

@@ -195,7 +195,7 @@ export default function ProjectsPage() {
           variants={titleVariants}
           className="text-4xl md:text-5xl font-bold tracking-tight text-primary"
         >
-          Featured Projects
+          Featured <span className="text-foreground">Projects</span>
         </motion.h1>
 
         <motion.div
