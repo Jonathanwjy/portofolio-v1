@@ -11,16 +11,17 @@ import ProjectsPage from "./components/app/project";
 import TechStackPage from "./components/app/tech_stack";
 import FooterContact from "./components/app/footer_contact";
 import "./i18n";
+import Certification from "./components/app/certification";
 
 const Home = () => (
   <>
     <HeroSection />
     <AboutPage />
     <ExperienceEducation />
+    <Certification />
     <TechStackPage />
     <ProjectsPage />
     <FooterContact />
-    {/* Section lain seperti Projects bisa ditambah di sini */}
   </>
 );
 

@@ -1,3 +1,4 @@
+import { s, section } from "framer-motion/client";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
@@ -9,6 +10,7 @@ i18n.use(initReactI18next).init({
           home: "Home",
           about: "About",
           education: "Education & Experience",
+          sertification: "Certification",
           tech: "Tech Stack",
           projects: "Projects",
           contact: "Contact",
@@ -48,6 +50,16 @@ i18n.use(initReactI18next).init({
             period: "2022 - 2026",
             description:
               "Graduated with a GPA of 3.66/4.00. Focused on full stack web development, data structure, and database management. Experienced in building web applications using modern frameworks while strengthening problem-solving, system design, and real-world application development skills. ",
+          },
+        },
+        certification: {
+          sectionTitle: "Certification",
+          button: "View Certificate",
+          webDeveloper: {
+            title: "Web Developer",
+            issuer:
+              "Professional Certification Institute of Multi Data Palembang University (LSP)",
+            date: "March 2026",
           },
         },
         experience: {
@@ -118,6 +130,7 @@ i18n.use(initReactI18next).init({
           home: "Beranda",
           about: "Tentang",
           education: "Pendidikan & Pengalaman",
+          sertification: "Sertifikasi",
           tech: "Teknologi",
           projects: "Proyek",
           contact: "Kontak",
@@ -157,6 +170,16 @@ i18n.use(initReactI18next).init({
             period: "2019 - 2022",
             description:
               "Lulus dengan fondasi akademik yang kuat dalam bidang matematika dan sains.",
+          },
+        },
+        certification: {
+          sectionTitle: "Sertifikasi",
+          button: "Lihat Sertifikat",
+          webDeveloper: {
+            title: "Pengembang Web",
+            issuer:
+              "Lembaga Sertifikasi Profesi Universitas Multi Data Palembang (LSP)",
+            date: "Maret 2026",
           },
         },
 

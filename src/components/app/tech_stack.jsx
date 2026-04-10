@@ -39,7 +39,7 @@ export default function TechStackCarousel() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          className="text-2xl md:text-4xl font-bold text-foreground mb-2"
+          className="text-2xl md:text-4xl font-bold text-primary mb-2"
         >
           Tech Stack & Tools
         </motion.h2>

@@ -10,6 +10,7 @@ const navItems = [
   { key: "home", link: "home" },
   { key: "about", link: "about" },
   { key: "education", link: "education" },
+  { key: "sertification", link: "certification" },
   { key: "tech", link: "tech" },
   { key: "projects", link: "projects" },
 ];

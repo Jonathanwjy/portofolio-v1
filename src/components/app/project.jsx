@@ -133,7 +133,6 @@ const projectsData = [
   },
 ];
 
-// --- VARIAN ANIMASI ---
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -154,11 +153,11 @@ const cardVariants = {
 };
 
 const titleVariants = {
-  hidden: { opacity: 0, y: -30 }, // Mulai dari atas sedikit & transparan
+  hidden: { opacity: 0, y: -30 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" }, // Durasi animasi
+    transition: { duration: 0.6, ease: "easeOut" },
   },
 };
 
@@ -168,7 +167,6 @@ export default function ProjectsPage() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // --- LOGIKA SLIDER ---
   const handleOpenProject = (project) => {
     setSelectedProject(project);
     setCurrentImageIndex(0);
@@ -196,12 +194,11 @@ export default function ProjectsPage() {
       <div className="container max-w-6xl mx-auto">
         <motion.h1
           variants={titleVariants}
-          className="text-4xl md:text-5xl font-bold tracking-tight text-foreground"
+          className="text-4xl md:text-5xl font-bold tracking-tight text-primary"
         >
           Featured Projects
         </motion.h1>
 
-        {/* Opsional: Jika ingin garis bawah atau deskripsi ikut animasi */}
         <motion.div
           variants={titleVariants}
           className="h-1 w-20 bg-primary mx-auto mt-4 rounded-full"
@@ -210,14 +207,14 @@ export default function ProjectsPage() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1 }} // Animasi berulang saat scroll
+          viewport={{ once: false, amount: 0.1 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center"
         >
           {projectsData.map((project, idx) => (
             <motion.div
               key={idx}
               variants={cardVariants}
-              className="w-full h-full flex justify-center" // Pastikan card di tengah grid
+              className="w-full h-full flex justify-center"
             >
               <ProjectCard
                 project={{
@@ -231,7 +228,6 @@ export default function ProjectsPage() {
           ))}
         </motion.div>
 
-        {/* --- MODAL / OVERLAY --- */}
         <AnimatePresence>
           {selectedProject && (
             <Dialog
@@ -243,7 +239,6 @@ export default function ProjectsPage() {
                   layoutId={`card-${selectedProject.title}`}
                   className="flex flex-col bg-card"
                 >
-                  {/* --- AREA GAMBAR / SLIDER --- */}
                   <motion.div
                     layoutId={`image-${selectedProject.images}`}
                     className="relative w-full md:w-3/4 mx-auto h-[33vh] md:h-auto md:aspect-video group md:rounded-xl overflow-hidden md:mt-6"
@@ -265,7 +260,6 @@ export default function ProjectsPage() {
                       />
                     </AnimatePresence>
 
-                    {/* Tombol Close */}
                     <Button
                       variant="ghost"
                       size="icon"
@@ -275,7 +269,6 @@ export default function ProjectsPage() {
                       <X className="w-5 h-5" />
                     </Button>
 
-                    {/* Navigasi Slider */}
                     {selectedProject.images.length > 1 && (
                       <>
                         <Button
@@ -310,7 +303,6 @@ export default function ProjectsPage() {
                           <ChevronRight className="w-6 h-6" />
                         </Button>
 
-                        {/* Indikator Dots */}
                         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
                           {selectedProject.images.map((_, idx) => (
                             <div
@@ -327,7 +319,6 @@ export default function ProjectsPage() {
                     )}
                   </motion.div>
 
-                  {/* --- AREA KONTEN DESKRIPSI --- */}
                   <div className="p-8 md:p-10 space-y-6">
                     <div className="space-y-4">
                       <div className="flex flex-wrap gap-2">

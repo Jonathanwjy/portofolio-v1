@@ -15,7 +15,6 @@ export function ProjectCard({ project, onClick }) {
       onClick={onClick}
       className="flex flex-col h-full overflow-hidden group bg-card rounded-[2rem] border-none shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
     >
-      {/* IMAGE */}
       <div className="relative aspect-[16/9] overflow-hidden">
         <img
           src={imageThumbnail}
@@ -26,7 +25,6 @@ export function ProjectCard({ project, onClick }) {
           }}
         />
 
-        {/* HOVER OVERLAY */}
         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-4">
           <IconButton
             href={githubUrl}
@@ -44,7 +42,6 @@ export function ProjectCard({ project, onClick }) {
         </div>
       </div>
 
-      {/* CONTENT */}
       <div className="flex flex-col flex-1">
         <CardHeader className="space-y-3 p-6 pb-4">
           <h3 className="text-2xl font-bold tracking-tight text-foreground line-clamp-1">
@@ -70,8 +67,6 @@ export function ProjectCard({ project, onClick }) {
     </Card>
   );
 }
-
-/* ---------- Reusable Icon Button ---------- */
 
 function IconButton({ href, disabled, icon, label }) {
   if (disabled) {
