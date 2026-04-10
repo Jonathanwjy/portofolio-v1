@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const techStack = [
-
   { name: "Laravel", icon: "https://cdn.simpleicons.org/laravel/FF2D20" },
   { name: "PHP", icon: "https://cdn.simpleicons.org/php/777BB4" }, // Baru
 
@@ -38,12 +37,12 @@ export default function TechStackCarousel() {
           viewport={{ once: false }}
           className="text-2xl md:text-4xl font-bold text-primary mb-2"
         >
-          Tech Stack & Tools
+          Tech Stack <span className="text-foreground"> & Tools</span>
         </motion.h2>
       </div>
 
       <motion.div
-        initial={{ opacity: 0, x: -50 }} 
+        initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8 }}
@@ -51,10 +50,10 @@ export default function TechStackCarousel() {
       >
         <div className="absolute inset-y-0 left-0 w-16 md:w-40 bg-gradient-to-r from-background to-transparent z-10" />
         <motion.div
-          className="flex gap-4 md:gap-8 w-max" 
+          className="flex gap-4 md:gap-8 w-max"
           animate={{ x: ["0%", "-33.33%"] }}
           transition={{
-            duration: 20, 
+            duration: 20,
             ease: "linear",
             repeat: Infinity,
           }}
