@@ -27,8 +27,8 @@ const DEFAULT_EVENTS = [
   },
 ];
 
-// Fixed left offset for the timeline line (in px or as a CSS value)
-const LINE_LEFT = 32; // px from the left of the container
+
+const LINE_LEFT = 32; 
 
 export const ScrollTimeline = ({
   events = DEFAULT_EVENTS,
@@ -135,7 +135,7 @@ export const ScrollTimeline = ({
       baseClasses,
       variantClasses[cardVariant] || variantClasses.default,
       effectClasses[cardEffect] || effectClasses.none,
-      // Cards always fill the space to the right of the line
+      
       "w-full",
     );
   };
@@ -156,9 +156,9 @@ export const ScrollTimeline = ({
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 pb-24">
-        {/* Wrapper with left padding to make room for the line + dot */}
+        
         <div className="relative" style={{ paddingLeft: LINE_LEFT + 28 }}>
-          {/* Static background line */}
+ 
           <div
             className={cn("absolute top-0 h-full z-10", lineColor)}
             style={{
@@ -167,7 +167,7 @@ export const ScrollTimeline = ({
             }}
           />
 
-          {/* Animated progress line */}
+
           {progressIndicator && (
             <>
               <motion.div
@@ -181,7 +181,7 @@ export const ScrollTimeline = ({
                   boxShadow: `0 0 15px rgba(99,102,241,0.5), 0 0 25px rgba(168,85,247,0.3)`,
                 }}
               />
-              {/* Glowing orb at the tip of progress */}
+
               <motion.div
                 className="absolute z-20"
                 style={{
@@ -213,7 +213,7 @@ export const ScrollTimeline = ({
             </>
           )}
 
-          {/* Event cards */}
+
           <div className="relative z-20">
             {events.map((event, index) => {
               const yOffset = useTransform(
@@ -230,8 +230,7 @@ export const ScrollTimeline = ({
                   }}
                   className="relative flex items-start mb-20 py-4"
                 >
-                  {/* Dot on the line — paddingLeft = LINE_LEFT+28, garis ada di LINE_LEFT dari edge container
-                      Jadi dari edge content area, garis ada di -(28) dari kiri. Center dot di sana. */}
+                 
                   <div
                     className="absolute z-30 flex-shrink-0"
                     style={{
@@ -266,7 +265,7 @@ export const ScrollTimeline = ({
                     />
                   </div>
 
-                  {/* Card — sits to the right of the line */}
+                 
                   <motion.div
                     className={cn(getCardClasses(index), "mt-0")}
                     variants={getCardVariants(index)}

@@ -67,7 +67,7 @@ export function Navbar() {
         className="fixed top-6 md:top-10 inset-x-0 z-40 flex justify-center px-4"
       >
         <nav className="flex items-center gap-2 p-2 rounded-full border border-border bg-primary shadow-lg">
-          {/* Mobile Hamburger */}
+
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 text-primary-foreground hover:bg-white/10 rounded-full"
@@ -75,7 +75,6 @@ export function Navbar() {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center bg-muted rounded-full px-2 py-1 gap-1 border border-border">
             {navItems.map((item) => (
               <NavButton
@@ -87,7 +86,6 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Contact Button */}
           <button
             onClick={() => scrollToSection("contact")}
             className="px-5 md:px-6 py-2 text-sm font-bold text-secondary-foreground bg-secondary border border-border rounded-full hover:bg-accent transition-all active:scale-95"
@@ -95,7 +93,6 @@ export function Navbar() {
             {t("nav.contact")}
           </button>
 
-          {/* Language Switcher */}
           <div className="flex items-center bg-muted rounded-full border border-border overflow-hidden">
             <LangButton
               active={i18n.language === "id"}
@@ -115,7 +112,6 @@ export function Navbar() {
         </nav>
       </motion.div>
 
-      {/* Mobile Dropdown */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -146,8 +142,6 @@ export function Navbar() {
     </>
   );
 }
-
-/* ---------- Sub Components ---------- */
 
 function NavButton({ item, isActive, onClick }) {
   const { t } = useTranslation();

@@ -35,7 +35,7 @@ export function HeroSection() {
         whileInView="visible"
         className="container max-w-6xl z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
       >
-        {/* ✅ FOTO PROFIL */}
+
         <motion.div
           variants={itemVariants}
           className="relative flex justify-center lg:justify-end order-first lg:order-last"
@@ -48,7 +48,6 @@ export function HeroSection() {
               className="absolute inset-0 rounded-full border-2 border-dashed border-primary opacity-20"
             />
 
-            {/* Image */}
             <div className="absolute inset-3 rounded-full overflow-hidden border-4 border-card shadow-2xl">
               <img
                 src="/images/foto-diri.jpeg"
@@ -57,7 +56,6 @@ export function HeroSection() {
               />
             </div>
 
-            {/* Badge */}
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
@@ -72,7 +70,6 @@ export function HeroSection() {
           </div>
         </motion.div>
 
-        {/* ✅ TEXT CONTENT */}
         <motion.div
           variants={itemVariants}
           className="space-y-6 text-center lg:text-left"

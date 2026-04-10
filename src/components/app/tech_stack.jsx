@@ -3,11 +3,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const techStack = [
-  // Backend & Languages
+
   { name: "Laravel", icon: "https://cdn.simpleicons.org/laravel/FF2D20" },
   { name: "PHP", icon: "https://cdn.simpleicons.org/php/777BB4" }, // Baru
 
-  // Frontend
   { name: "React", icon: "https://cdn.simpleicons.org/react/61DAFB" },
   { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript/F7DF1E" },
   {
@@ -15,11 +14,9 @@ const techStack = [
     icon: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
   },
 
-  // Database & API
   { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql/4479A1" },
   { name: "RESTful API", icon: "https://cdn.simpleicons.org/postman/FF6C37" },
 
-  // Tools
   { name: "Figma", icon: "https://cdn.simpleicons.org/figma/F24E1E" }, // Baru
   { name: "Postman", icon: "https://cdn.simpleicons.org/postman/FF6C37" }, // Baru (Tools spesifik)
   {
@@ -45,9 +42,8 @@ export default function TechStackCarousel() {
         </motion.h2>
       </div>
 
-      {/* Baris 1: Kiri ke Kanan */}
       <motion.div
-        initial={{ opacity: 0, x: -50 }} // Jarak x dikurangi untuk mobile agar smooth
+        initial={{ opacity: 0, x: -50 }} 
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8 }}
@@ -55,10 +51,10 @@ export default function TechStackCarousel() {
       >
         <div className="absolute inset-y-0 left-0 w-16 md:w-40 bg-gradient-to-r from-background to-transparent z-10" />
         <motion.div
-          className="flex gap-4 md:gap-8 w-max" // Gap dikecilkan di mobile
+          className="flex gap-4 md:gap-8 w-max" 
           animate={{ x: ["0%", "-33.33%"] }}
           transition={{
-            duration: 20, // Sedikit lebih cepat di mobile karena item lebih kecil
+            duration: 20, 
             ease: "linear",
             repeat: Infinity,
           }}
@@ -70,7 +66,6 @@ export default function TechStackCarousel() {
         <div className="absolute inset-y-0 right-0 w-16 md:w-40 bg-gradient-to-l from-background to-transparent z-10" />
       </motion.div>
 
-      {/* Baris 2: Kanan ke Kiri */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}

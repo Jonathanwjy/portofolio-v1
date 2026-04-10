@@ -40,7 +40,6 @@ export function ExperienceEducation() {
     >
       <div className="container max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* EDUCATION */}
           <ScrollTimeline
             events={educationData}
             title={t("section.education")}
@@ -51,7 +50,6 @@ export function ExperienceEducation() {
             revealAnimation="fade"
           />
 
-          {/* EXPERIENCE */}
           <ScrollTimeline
             events={experienceData}
             title={t("section.experience")}

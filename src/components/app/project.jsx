@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-// --- DATA DUMMY PROYEK ---
 const projectsData = [
   {
     key: "traho",
