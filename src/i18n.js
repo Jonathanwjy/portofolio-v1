@@ -103,6 +103,13 @@ i18n.use(initReactI18next).init({
             description:
               "This project is a web application for a BarberShop, functioning as a landing page that provides barbershop-related information and an integrated online booking platform. The application is designed to streamline the reservation process for customers, prevent scheduling conflicts, and digitize daily operations for barbershop management.\n\nThe system offers a seamless customer booking experience with dynamic time slot options, real-time availability checks, and secure online payment integration using Midtrans. On the administrator side, a dashboard is provided to manage services, capsters (barbers), dynamic pricing for different services and capsters, as well as to efficiently monitor daily customer schedules. It is built with modern technologies including Laravel, React (Inertia.js), and TypeScript.",
           },
+          hris: {
+            title: "HRIS",
+            shortDesc:
+              "Modern Human Resource Information and Task Management Application",
+            description:
+              "This project is a web-based Human Resource Information System (HRIS) to modernize and streamline internal company workflows. Built to overcome the inefficiencies of manual administration, the platform provides a centralized ecosystem for managing employee data, monitoring workforce productivity, and enhancing organizational communication.\n\nThe system is equipped with role-based access control, ensuring secure interactions across all user levels. Core HR features are attendance tracking, automated payroll calculation, and streamlined leave requests, the application highlights an advanced task management module. This feature allows management to dynamically distribute tasks based on departments and roles, seamlessly integrated with real-time status tracking and automated email notifications. The application is built for scalability and performance using Laravel, React (Inertia.js), TypeScript, and MySQL.",
+          },
         },
         contact: {
           title: "Let's Connect",
@@ -222,6 +229,13 @@ i18n.use(initReactI18next).init({
               "Landing page BarberShop, sistem booking, dan administrasi.",
             description:
               "Proyek ini adalah aplikasi web untuk BarberShop, berfungsi sebagai landing page yang menyediakan informasi terkait barbershop, dan platform booking online terintegrasi. Aplikasi ini dirancang untuk menyederhanakan proses reservasi bagi pelanggan, mencegah terjadinya jadwal yang bentrok, dan mendigitalisasi operasional harian bagi manajemen barbershop.\n\nSistem ini menawarkan pengalaman booking pelanggan dengan pilihan waktu (time slot) yang dinamis, pengecekan ketersediaan secara real-time, dan integrasi pembayaran online yang aman menggunakan Midtrans. Pada sisi administrator, tersedia dasboard untuk mengelola service, capster, harga dinamis untuk tiap service dan capster yang berbeda, serta memantau jadwal pelanggan harian secara efisien. Dibangun dengan teknologi modern termasuk Laravel, React (Inertia.js), dan TypeScript.",
+          },
+          hris: {
+            title: "HRIS Management",
+            shortDesc:
+              "Aplikasi Informasi Sumber Daya Manusia dan Manajemen Tugas Modern",
+            description:
+              "Proyek ini merupakan Sistem Informasi Sumber Daya Manusia (HRIS) berbasis web yang dirancang untuk memodernisasi dan mengoptimalkan alur kerja perusahaan. Dibuat untuk mengatasi ketidakefisienan administrasi manual, platform ini menyediakan ekosistem terpusat untuk mengelola data karyawan, memantau produktivitas kerja, dan meningkatkan komunikasi antara manager dan karyawan.\n\n Sistem ini dilengkapi dengan role-based access control, yang memastikan keamanan interaksi di semua tingkatan pengguna. Fitur-fitur utama HR adalah pelacakan absensi, perhitungan gaji otomatis, dan sistem pengajuan cuti yang efisien, aplikasi ini juga menonjolkan modul manajemen tugas tingkat lanjut. Fitur ini memungkinkan pihak manajemen untuk mendistribusikan tugas secara dinamis berdasarkan departemen dan peran (role), yang terintegrasi dengan pemantauan status secara real-time dan notifikasi email otomatis. Aplikasi ini dibangun dengan mengedepankan skalabilitas dan performa menggunakan Laravel, React (Inertia.js), TypeScript, dan MySQL.",
           },
         },
         contact: {
