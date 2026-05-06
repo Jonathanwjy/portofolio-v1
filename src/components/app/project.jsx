@@ -151,7 +151,7 @@ const projectsData = [
       "Inertia JS",
       "Tailwind CSS",
       "TypeScript",
-      "MySQL",
+      "PostgreSQL",
       "Authentication & Authorization",
       "Mailtrap",
       "Jobs & Queue",
