@@ -102,7 +102,7 @@ const projectsData = [
       "Mailtrap",
       "Jobs & Queue",
     ],
-    githubUrl: "",
+    githubUrl: "https://github.com/Jonathanwjy/hris-management",
     demoUrl: "",
   },
   {
