@@ -1,4 +1,3 @@
-import { s, section } from "framer-motion/client";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
@@ -28,9 +27,9 @@ i18n.use(initReactI18next).init({
           title: "About",
           me: "Me",
           paragraph1:
-            "Informatics graduate with a strong focus on full stack web development. Experienced in building web applications using PHP, JavaScript, MySQL, React, Tailwind CSS, and Laravel.",
+            "Informatics graduate with a strong focus on full stack web development. Experienced in building web applications using PHP, Laravel, JavaScript, TypeScript, React, Next.js, Node.js, Inertia.js, Tailwind CSS, ShadCN UI, MySQL, and PostgreSQL",
           paragraph2:
-            "I enjoy turning ideas and requirements into functional, well-structured systems. I am highly curious and motivated to continuously improve my skills by exploring new technologies and best practices in the web development ecosystem. In addition to technical skills, I value teamwork, clear communication, and responsibility. I am comfortable working in collaborative environments, contributing ideas, and learning from feedback. I am eager to grow as a developer and to contribute to meaningful projects that solve real-world problems.",
+            "I have experience in building and integrating RESTful APIs to support data communication between frontend and backend systems. In addition to technical skills, I am able to work well in a team, communicate clearly, and take responsibility for completing tasks effectively. I am eager to continue growing as a developer and contribute to projects that provide solutions to real-world problems and workplace problems.",
         },
         section: {
           education: "Education",
@@ -154,9 +153,9 @@ i18n.use(initReactI18next).init({
           title: "Tentang",
           me: "Saya",
           paragraph1:
-            "Lulusan Informatika dengan minat kuat pada full stack web development. Berpengalaman dalam membangun aplikasi web menggunakan PHP, JavaScript, MySQL, React, Tailwind CSS, dan Laravel.",
+            "Lulusan Informatika dengan minat dan kemampuan pada full stack web development. Memiliki pengalaman dalam membangun aplikasi web menggunakan PHP, Laravel, JavaScript, TypeScript, React, Next.js, Node.js, Inertia.js, Tailwind CSS, ShadCN UI, MySQL dan PostgreSQL.",
           paragraph2:
-            "Saya senang mengubah ide dan kebutuhan menjadi sistem yang fungsional dan terstruktur dengan baik. Saya memiliki rasa ingin tahu yang tinggi dan motivasi untuk meningkatkan kemampuan dengan mempelajari teknologi baru dan best practices dalam ekosistem web development. Selain kemampuan teknis, saya mampu bekerja dengan baik bersama tim, komunikasi yang jelas, dan tanggung jawab. Saya ingin terus berkembang sebagai developer dan berkontribusi pada proyek yang memberikan dan memecahkan masalah yang nyata.",
+            "Saya memiliki pengalaman dalam membangun dan mengintegrasikan RESTful API untuk mendukung komunikasi data antara frontend dan backend. Selain kemampuan teknis, saya dapat bekerja sama dengan baik dalam tim, memiliki komunikasi yang jelas, serta bertanggung jawab dalam menyelesaikan pekerjaan. Saya ingin terus berkembang sebagai developer dan berkontribusi pada proyek yang dapat memberikan solusi untuk masalah nyata dan di dunia kerja.",
         },
         section: {
           education: "Pendidikan",
