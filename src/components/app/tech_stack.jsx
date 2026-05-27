@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const techStack = [
   { name: "Laravel", icon: "https://cdn.simpleicons.org/laravel/FF2D20" },
