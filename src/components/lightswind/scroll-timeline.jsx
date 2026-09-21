@@ -305,6 +305,13 @@ export const ScrollTimeline = ({
                         <p className="text-muted-foreground font-medium mb-2">
                           {event.title}
                         </p>
+                        
+                        {event.period && (
+                            <Calendar className="h-4 w-4 mr-2 text-primary" />
+                          <p className="text-sm text-muted-foreground mb-2">
+                            {event.period}
+                          </p>
+                        )}
 
                         <p className="text-muted-foreground">
                           {event.description}
