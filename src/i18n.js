@@ -62,6 +62,13 @@ i18n.use(initReactI18next).init({
           },
         },
         experience: {
+          
+          dataon: {
+            title: "Software Maintenance",
+            institution: "PT.Indodev Niaga Internet (DataOn)",
+            period: "Jul 2026 - present",
+            description: "Provide maintenance and technical support for DataOn HRIS across 30 projects and clients. Handle application and database troubleshooting, analyze SQL queries, manage support tickets, and assist in resolving issues across various modules, including attendance, payroll, performance, approval, and others."
+          },
           intern: {
             title: "Web Developer Intern",
             institution: "PKBM Sekolah Bintang",
@@ -69,12 +76,6 @@ i18n.use(initReactI18next).init({
             description:
               "Developed a web-based Student Information System using Laravel and MySQL.",
           },
-          dataon: {
-            title: "Software Maintenance",
-            institution: "PT.Indodev Niaga Internet (DataOn)",
-            period: "Jul 2026 - present",
-            description: "Provide maintenance and technical support for DataOn HRIS across 30 projects and clients. Handle application and database troubleshooting, analyze SQL queries, manage support tickets, and assist in resolving issues across various modules, including attendance, payroll, performance, approval, and others."
-          }
         },
         projects: {
           sectionTitle: "Featured Projects",
@@ -196,19 +197,20 @@ i18n.use(initReactI18next).init({
         },
 
         experience: {
-          intern: {
+         
+           dataon: {
+            title: "Software Maintenance",
+            institution: "PT.Indodev Niaga Internet (DataOn)",
+            period: "Jul 2026 - sekarang",
+            description: "Melakukan pemeliharaan dan dukungan teknis pada aplikasi DataOn HRIS untuk 30 project dan client. Menangani troubleshooting aplikasi dan database, menganalisis query SQL, menangani support ticket, serta membantu penyelesaian kendala terkait modul - modul yang ada pada aplikasi, seperti attendance, payroll, performance, approval, dll."
+          },
+           intern: {
             title: "Magang Web Developer",
             company: "PKBM Sekolah Bintang",
             period: "Feb 2025 - Jul 2025",
             description:
               "Mengembangkan Sistem Informasi Siswa berbasis web (Buku Induk Siswa) untuk mengelola data pribadi dan catatan akademik siswa menggunakan Laravel dan MySQL.",
           },
-           dataon: {
-            title: "Software Maintenance",
-            institution: "PT.Indodev Niaga Internet (DataOn)",
-            period: "Jul 2026 - sekarang",
-            description: "Melakukan pemeliharaan dan dukungan teknis pada aplikasi DataOn HRIS untuk 30 project dan client. Menangani troubleshooting aplikasi dan database, menganalisis query SQL, menangani support ticket, serta membantu penyelesaian kendala terkait modul - modul yang ada pada aplikasi, seperti attendance, payroll, performance, approval, dll."
-          }
         },
         projects: {
           sectionTitle: "Proyek",
