@@ -276,27 +276,7 @@ export const ScrollTimeline = ({
                   >
                     <Card className="bg-background border">
                       <CardContent className="p-6">
-                        {dateFormat === "badge" ? (
-                          <div className="flex items-center mb-2">
-                            {event.icon || (
-                              <Calendar className="h-4 w-4 mr-2 text-primary" />
-                            )}
-                            <span
-                              className={cn(
-                                "text-sm font-bold",
-                                event.color
-                                  ? `text-${event.color}`
-                                  : "text-primary",
-                              )}
-                            >
-                              {event.year}
-                            </span>
-                          </div>
-                        ) : (
-                          <p className="text-lg font-bold text-primary mb-2">
-                            {event.year}
-                          </p>
-                        )}
+                      
 
                         <h3 className="text-xl font-bold mb-1">
                           {event.institution}
@@ -307,10 +287,12 @@ export const ScrollTimeline = ({
                         </p>
                         
                         {event.period && (
+                          <div className="flex items-center mb-2">
                             <Calendar className="h-4 w-4 mr-2 text-primary" />
-                          <p className="text-sm text-muted-foreground mb-2">
-                            {event.period}
-                          </p>
+                            <p className="text-sm text-muted-foreground">
+                              {event.period}
+                            </p>
+                          </div>
                         )}
 
                         <p className="text-muted-foreground">
