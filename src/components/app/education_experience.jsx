@@ -26,17 +26,18 @@ export function ExperienceEducation() {
 
   const experienceData = [
     {
-      title: t("experience.intern.title"),
-      institution: t("experience.intern.institution"),
-      period: t("experience.intern.period"),
-      description: t("experience.intern.description"),
-    },
-     {
       title: t("experience.dataon.title"),
       institution: t("experience.dataon.institution"),
       period: t("experience.dataon.period"),
       description: t("experience.dataon.description"),
     },
+    {
+      title: t("experience.intern.title"),
+      institution: t("experience.intern.institution"),
+      period: t("experience.intern.period"),
+      description: t("experience.intern.description"),
+    }
+     
   ];
 
   return (
