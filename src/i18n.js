@@ -69,6 +69,12 @@ i18n.use(initReactI18next).init({
             description:
               "Developed a web-based Student Information System using Laravel and MySQL.",
           },
+          dataon: {
+            title: "Software Maintenance",
+            institution: "PT.Indodev Niaga Internet (DataOn)",
+            period: "Jul 2026 - present",
+            description:
+          }
         },
         projects: {
           sectionTitle: "Featured Projects",
@@ -197,6 +203,12 @@ i18n.use(initReactI18next).init({
             description:
               "Mengembangkan Sistem Informasi Siswa berbasis web (Buku Induk Siswa) untuk mengelola data pribadi dan catatan akademik siswa menggunakan Laravel dan MySQL.",
           },
+           dataon: {
+            title: "Software Maintenance",
+            institution: "PT.Indodev Niaga Internet (DataOn)",
+            period: "Jul 2026 - present",
+            description:
+          }
         },
         projects: {
           sectionTitle: "Proyek",
