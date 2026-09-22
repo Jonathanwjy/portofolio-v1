@@ -27,8 +27,7 @@ const DEFAULT_EVENTS = [
   },
 ];
 
-
-const LINE_LEFT = 32; 
+const LINE_LEFT = 32;
 
 export const ScrollTimeline = ({
   events = DEFAULT_EVENTS,
@@ -135,7 +134,7 @@ export const ScrollTimeline = ({
       baseClasses,
       variantClasses[cardVariant] || variantClasses.default,
       effectClasses[cardEffect] || effectClasses.none,
-      
+
       "w-full",
     );
   };
@@ -156,9 +155,7 @@ export const ScrollTimeline = ({
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 pb-24">
-        
         <div className="relative" style={{ paddingLeft: LINE_LEFT + 28 }}>
- 
           <div
             className={cn("absolute top-0 h-full z-10", lineColor)}
             style={{
@@ -166,7 +163,6 @@ export const ScrollTimeline = ({
               width: progressLineWidth,
             }}
           />
-
 
           {progressIndicator && (
             <>
@@ -213,7 +209,6 @@ export const ScrollTimeline = ({
             </>
           )}
 
-
           <div className="relative z-20">
             {events.map((event, index) => {
               const yOffset = useTransform(
@@ -230,7 +225,6 @@ export const ScrollTimeline = ({
                   }}
                   className="relative flex items-start mb-20 py-4"
                 >
-                 
                   <div
                     className="absolute z-30 flex-shrink-0"
                     style={{
@@ -265,7 +259,6 @@ export const ScrollTimeline = ({
                     />
                   </div>
 
-                 
                   <motion.div
                     className={cn(getCardClasses(index), "mt-0")}
                     variants={getCardVariants(index)}
@@ -276,16 +269,17 @@ export const ScrollTimeline = ({
                   >
                     <Card className="bg-background border">
                       <CardContent className="p-6">
-                      
-
-                        <h3 className="text-xl font-bold mb-1">
+                        <h3
+                          className="text-xl font-bold mb-1 hover:underline hover:text-blue-400"
+                          href=""
+                        >
                           {event.institution}
                         </h3>
 
                         <p className="text-muted-foreground font-medium mb-2">
                           {event.title}
                         </p>
-                        
+
                         {event.period && (
                           <div className="flex items-center mb-2">
                             <Calendar className="h-4 w-4 mr-2 text-primary" />

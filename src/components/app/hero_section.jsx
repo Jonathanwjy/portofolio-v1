@@ -35,7 +35,6 @@ export function HeroSection() {
         whileInView="visible"
         className="container max-w-6xl z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
       >
-
         <motion.div
           variants={itemVariants}
           className="relative flex justify-center lg:justify-end order-first lg:order-last"
@@ -56,7 +55,7 @@ export function HeroSection() {
               />
             </div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ delay: 0.5, type: "spring" }}
@@ -66,7 +65,7 @@ export function HeroSection() {
               <span className="text-[10px] font-bold uppercase tracking-wider text-foreground">
                 Open To Work
               </span>
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
 
