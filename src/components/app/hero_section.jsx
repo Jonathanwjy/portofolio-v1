@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Mail, Github, Linkedin, Instagram } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import StrokeText from "../stroke-text";
 
 export function HeroSection() {
   const { t } = useTranslation();
@@ -83,12 +84,22 @@ export function HeroSection() {
           </motion.p>
 
           <div className="p-4 border border-border bg-card rounded-xl">
-            <p className="text-[10px] uppercase text-muted-foreground font-semibold mb-1">
-              {t("hero.focus")}
-            </p>
-            <p className="text-xs lg:text-sm font-bold text-foreground">
-              {t("hero.focusValue")}
-            </p>
+            <StrokeText
+              text="FullStack Web Development"
+              strokeColor="var(--foreground)"
+              fillColor="var(--foreground)"
+              strokeWidth={1}
+              drawDuration={1.1}
+              fillDelay={0.1}
+              stagger={0.05}
+              ease="power2.out"
+              trigger="mount"
+              fillMode="wipe"
+              fontSize={50}
+              fontWeight={400}
+              letterSpacing={-2}
+              reverse={false}
+            />
           </div>
 
           <a

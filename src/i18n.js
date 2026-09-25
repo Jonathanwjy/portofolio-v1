@@ -19,7 +19,7 @@ i18n.use(initReactI18next).init({
           description:
             "An IT Graduate focused on Full Stack Web Development. I build maintainable, efficient, scalable, and user-friendly systems.",
           focus: "Focus",
-          focusValue: "FullStack Web Development",
+          focusValue: "FullStack Web Development | HRIS",
           viewProjects: "View Projects",
           openToWork: "Open to Work",
         },
@@ -62,12 +62,12 @@ i18n.use(initReactI18next).init({
           },
         },
         experience: {
-          
           dataon: {
             title: "Software Maintenance",
             institution: "PT.Indodev Niaga Internet (DataOn)",
             period: "Jul 2026 - present",
-            description: "Provide maintenance and technical support for DataOn HRIS across 30 projects and clients. Handle application and database troubleshooting, analyze SQL queries, manage support tickets, and assist in resolving issues across various modules, including attendance, payroll, performance, approval, and others."
+            description:
+              "Provide maintenance and technical support for DataOn HRIS across 30 projects and clients. Handle application and database troubleshooting, analyze SQL queries, manage support tickets, and assist in resolving issues across various modules, including attendance, payroll, performance, approval, and others.",
           },
           intern: {
             title: "Web Developer Intern",
@@ -153,7 +153,7 @@ i18n.use(initReactI18next).init({
           description:
             "Lulusan IT yang berfokus pada Full Stack Web Development. Saya membangun sistem yang efisien, scalable, dan user-friendly.",
           focus: "Fokus",
-          focusValue: "FullStack Web Development",
+          focusValue: "FullStack Web Development | HRIS",
           viewProjects: "Lihat Proyek",
         },
         about: {
@@ -197,14 +197,14 @@ i18n.use(initReactI18next).init({
         },
 
         experience: {
-         
-           dataon: {
+          dataon: {
             title: "Software Maintenance",
             institution: "PT.Indodev Niaga Internet (DataOn)",
             period: "Jul 2026 - sekarang",
-            description: "Melakukan pemeliharaan dan dukungan teknis pada aplikasi DataOn HRIS untuk 30 project dan client. Menangani troubleshooting aplikasi dan database, menganalisis query SQL, menangani support ticket, serta membantu penyelesaian kendala terkait modul - modul yang ada pada aplikasi, seperti attendance, payroll, performance, approval, dll."
+            description:
+              "Melakukan pemeliharaan dan dukungan teknis pada aplikasi DataOn HRIS untuk 30 project dan client. Menangani troubleshooting aplikasi dan database, menganalisis query SQL, menangani support ticket, serta membantu penyelesaian kendala terkait modul - modul yang ada pada aplikasi, seperti attendance, payroll, performance, approval, dll.",
           },
-           intern: {
+          intern: {
             title: "Magang Web Developer",
             company: "PKBM Sekolah Bintang",
             period: "Feb 2025 - Jul 2025",
